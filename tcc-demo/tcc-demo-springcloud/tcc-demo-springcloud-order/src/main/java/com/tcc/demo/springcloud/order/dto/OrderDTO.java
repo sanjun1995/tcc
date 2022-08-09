@@ -2,8 +2,6 @@ package com.tcc.demo.springcloud.order.dto;
 
 import java.math.BigDecimal;
 
-import javax.ws.rs.DefaultValue;
-
 import lombok.Data;
 
 /**
@@ -14,15 +12,13 @@ import lombok.Data;
 @Data
 public class OrderDTO {
 
-	@DefaultValue(value="10000")
 	private String userId;
 
 	/**
 	 * 冻结金额，扣款暂存余额
 	 */
 	private BigDecimal amount;
-	
-	@DefaultValue(value="1")
+
 	private String productId;
 
 	/**
